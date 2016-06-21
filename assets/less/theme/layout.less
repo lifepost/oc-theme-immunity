@@ -1,0 +1,114 @@
+//
+// Layouts
+//
+// Styles specific to different page layouts.
+//
+
+// Used by the fixed navigation
+
+/* Customize Bootstrap */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body { font-family: nanumgothic; }
+
+.bar-top {
+    height: 12px;
+    background: @brand-primary;
+    margin-bottom: 20px;
+}
+.top-logo {
+    //padding-bottom: 15px;
+    //border-bottom: 1px solid @brand-primary;
+}
+.account {
+    a {
+        color: black;
+    }
+}
+.top-menu {
+    border-top: 1px solid @brand-primary;
+    border-bottom: 1px solid @brand-primary;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 0px;
+    .item {
+        margin-right: 107px;
+        a {
+            padding-left: 0!important;
+            padding-right: 0!important;
+        }
+        a:visited {
+            background-color: #ffffff;
+        }
+    }
+    .item:first-child {
+        text-align: left;
+    }
+    .item:last-child {
+        text-align: right!important;
+        margin-right: 0px!important;
+    }
+    .item:not(:first-child) {
+        text-align: center;
+    }
+    a {
+        color: black;
+    }
+    .item a:hover {
+        background-color: #ffffff!important;
+        color: @brand-primary!important;
+    }
+    .nav-pills > li.active > a {
+        color: @brand-primary;
+    }
+}
+/* Footer */
+.footer { background-color: #ebebeb; margin-top: 50px; }
+.footer-menu {
+    a {
+        color: black;
+    }
+    border: solid #d7d7d7;
+    border-width: 1px 0px;
+    padding: 12px 0px 7px 0px;
+    color: black;
+    font-size: 12px;
+}
+.footer-info {
+    padding: 20px 10px 20px 10px;
+    line-height: 20px;
+    color: black;
+    font-size: 12px;
+}
+
+.layout-side {
+    width: 290px;
+    margin: 0 10px;
+    float: left;
+}
+.layout-main {
+    width: 920px;
+    margin: 0 10px;
+    float: right;
+}
+@media (max-width: @screen-sm) {
+    .layout-side {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+    .layout-main {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+    .top-menu .nav-pills > li {
+        margin-right: 0px;
+        width: 100%;
+        text-align: left!important;
+    }
+    .top-menu .item:last-child {
+        text-align: left!important;
+    }
+}

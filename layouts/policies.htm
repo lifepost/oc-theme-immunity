@@ -1,0 +1,117 @@
+description = "Policies layout"
+
+[session]
+security = "all"
+==
+function onStart()
+{
+    $this['uri'] = Request::path();
+}
+==
+{% component 'session' %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>과채 장면역탕 - {{ this.page.title }}</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="jsy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="immunity">
+    <link rel="icon" type="image/ico" href="{{ 'assets/images/favicon.ico'|theme }}" />
+    {% styles %}
+    <link href="{{ [
+        'assets/css/theme.css'
+        ]|theme }}" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header id="layout-header">
+    {% partial "header" %}
+</header>
+
+<!-- Content -->
+<section id="layout-content">
+    <div class="container page">
+        <div class="row">
+            <div class="layout-side">
+                <div class="side-title">
+                    정책
+                </div>
+                <div class="side-list">
+                    <div class="list-group">
+
+                        <li class="list-group-item {% if uri == 'policies/privacy' %} selected {% endif %}">
+                            <a href="/policies/privacy">개인정보 취급방침</a>
+                        </li>
+                        <li class="list-group-item {% if uri == 'policies/agreement' %} selected {% endif %}">
+                            <a href="/policies/agreement">이용약관</a>
+                        </li>
+                        <li class="list-group-item {% if uri == 'policies/email' %} selected {% endif %}">
+                            <a href="/policies/email">이메일 무단수집거부</a>
+                        </li>
+
+                    </div>
+                </div>
+                <div class="customtel-wrapper">
+                    <div class="customtel-side">
+                        <a href="tel:1661-8269">
+                            <h4>전화상담 신청하기</h4>
+                            <hr>
+                            <h3>T. 1661-8269</h3>
+                            <h5><span>평&nbsp;&nbsp;&nbsp;&nbsp;일</span>&nbsp;&nbsp;&nbsp;&nbsp; 오전 9시 ~ 오후 8시</h5>
+                            <h5><span>토요일</span>&nbsp;&nbsp;&nbsp;&nbsp; 오전 9시 ~ 오후 5시</h5>
+                        </a>
+                        <div class="customtel-box">
+                            <span>※ 진료시, 예약 신청은 필수입니다.</span>
+                        </div>
+                    </div>
+                    <a href="https://www.freehugs.co.kr/asthma/counsel/counsel_list.php" target="_blank">
+                        <div class="customtel-bottom-button">
+                            <span>간편상담</span>
+                        </div>
+                    </a>
+                    <!--
+                    <div class="col-md-6">
+                        <div class="customtel-bottom-button">
+                            <span>치료후기</span>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="layout-main" >
+                {% page %}
+            </div>
+        </div>
+</section>
+
+<!-- Footer -->
+<footer id="layout-footer">
+    {% partial "footer" %}
+</footer>
+
+<!-- Scripts -->
+<script src="{{ [
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/bootstrap-less/js/transition.js',
+            'node_modules/bootstrap-less/js/alert.js',
+            'node_modules/bootstrap-less/js/button.js',
+            'node_modules/bootstrap-less/js/carousel.js',
+            'node_modules/bootstrap-less/js/collapse.js',
+            'node_modules/bootstrap-less/js/dropdown.js',
+            'node_modules/bootstrap-less/js/modal.js',
+            'node_modules/bootstrap-less/js/tooltip.js',
+            'node_modules/bootstrap-less/js/popover.js',
+            'node_modules/bootstrap-less/js/scrollspy.js',
+            'node_modules/bootstrap-less/js/tab.js',
+            'node_modules/bootstrap-less/js/affix.js',
+            'assets/javascript/app.js'
+        ]|theme }}"></script>
+{% framework extras %}
+{% scripts %}
+
+</body>
+</html>

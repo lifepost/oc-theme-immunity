@@ -1,0 +1,18 @@
+{
+  "name": "immunity-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "lessc --glob ./assets/less/theme.less ./assets/css/theme.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run build && 배포코드"
+  },
+  "author": "seyeon jung",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-less": "^3.3.8",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.0.0"
+  }
+}

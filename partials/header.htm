@@ -1,0 +1,41 @@
+[menu topmenu]
+start = "id-1"
+activeNode = 0
+listItemClasses = "item"
+primaryClasses = "nav nav-pills"
+secondaryClasses = "dropdown-menu"
+numberOfLevels = 2
+
+[account]
+==
+<!-- 상단 바 -->
+<div class="bar-top">
+
+</div>
+
+<!-- 상단 로고 -->
+<div class="top-logo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="/"><img src="{{ 'assets/images/logo_top.jpg'|theme }}" style="padding-bottom: 20px;"></a>
+                <div class="account text-right">
+                    <!--
+                    {% if user %}
+                    <p><a href="/account">{{ user.name }}</a> | <a data-request="onLogout" data-request-data="redirect: '/'">로그아웃</a></p>
+                    {% else %}
+                    <p><a href="/account">로그인</a></p>
+                    {% endif %}
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 상단 메뉴 -->
+<div class="top-menu">
+    <div class="container">
+        {% component "topmenu" %}
+    </div>
+</div>
