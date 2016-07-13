@@ -55,35 +55,15 @@ $this['uri'] = Request::path();
 
                     </div>
                 </div>
-                <div class="customtel-wrapper">
-                    <div class="customtel-side">
-                        <a href="tel:1661-8269">
-                            <h4>전화상담 신청하기</h4>
-                            <hr>
-                            <h3>T. 1661-8269</h3>
-                            <h5><span>평&nbsp;&nbsp;&nbsp;&nbsp;일</span>&nbsp;&nbsp;&nbsp;&nbsp; 오전 9시 ~ 오후 8시</h5>
-                            <h5><span>토요일</span>&nbsp;&nbsp;&nbsp;&nbsp; 오전 9시 ~ 오후 5시</h5>
-                        </a>
-                        <div class="customtel-box">
-                            <span>※ 진료시, 예약 신청은 필수입니다.</span>
-                        </div>
-                    </div>
-                    <a href="https://www.freehugs.co.kr/asthma/counsel/counsel_list.php" target="_blank">
-                        <div class="customtel-bottom-button">
-                            <span>간편상담</span>
-                        </div>
-                    </a>
-                    <!--
-                    <div class="col-md-6">
-                        <div class="customtel-bottom-button">
-                            <span>치료후기</span>
-                        </div>
-                    </div>
-                    -->
+                <div class="hidden-xs">
+                    {% partial 'customtel' %}
                 </div>
             </div>
             <div class="layout-main" >
                 {% page %}
+                <div class="visible-xs">
+                    {% partial 'customtel' %}
+                </div>
             </div>
         </div>
 

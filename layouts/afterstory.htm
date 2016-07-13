@@ -1,12 +1,7 @@
-description = "Policies layout"
+description = "Jang layout"
 
 [session]
 security = "all"
-==
-function onStart()
-{
-$this['uri'] = Request::path();
-}
 ==
 {% component 'session' %}
 <!DOCTYPE html>
@@ -37,25 +32,14 @@ $this['uri'] = Request::path();
     <div class="container page">
         <div class="row">
             <div class="layout-side">
-                <div class="side-title">
-                    열린의학회 소개
-                </div>
-                <div class="side-list">
-                    <div class="list-group">
-
-                        <li class="list-group-item {% if uri == 'openmed/introduce' %} selected {% endif %}">
-                            <a href="/openmed/introduce">열린의학회란?</a>
-                        </li>
-
-                    </div>
-                </div>
                 <div class="hidden-xs">
                     {% partial 'customtel' %}
                 </div>
             </div>
             <div class="layout-main" >
                 {% page %}
-                <div class="visible-xs">
+                <div class="clearfix"></div>
+                <div class="visible-xs" style="padding: 10px;">
                     {% partial 'customtel' %}
                 </div>
             </div>

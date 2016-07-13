@@ -14,7 +14,7 @@ body { font-family: nanumgothic; }
 .bar-top {
     height: 12px;
     background: @brand-primary;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 .top-logo {
     //padding-bottom: 15px;
@@ -22,7 +22,7 @@ body { font-family: nanumgothic; }
 }
 .account {
     a {
-        color: black;
+        color: @text-color;
     }
 }
 .top-menu {
@@ -53,7 +53,7 @@ body { font-family: nanumgothic; }
         text-align: center;
     }
     a {
-        color: black;
+        color: @text-color;
     }
     .item a:hover {
         background-color: #ffffff!important;
@@ -61,24 +61,23 @@ body { font-family: nanumgothic; }
     }
     .nav-pills > li.active > a {
         color: @brand-primary;
+        background: #ffffff;
     }
 }
 /* Footer */
 .footer { background-color: #ebebeb; margin-top: 50px; }
 .footer-menu {
     a {
-        color: black;
+        color: @text-color;
     }
     border: solid #d7d7d7;
     border-width: 1px 0px;
     padding: 12px 0px 7px 0px;
-    color: black;
     font-size: 12px;
 }
 .footer-info {
     padding: 20px 10px 20px 10px;
     line-height: 20px;
-    color: black;
     font-size: 12px;
 }
 
@@ -103,6 +102,9 @@ body { font-family: nanumgothic; }
         margin: 0;
         padding: 0 10px;
     }
+    .top-menu {
+        line-height: 10px;
+    }
     .top-menu .nav-pills > li {
         margin-right: 0px;
         width: 100%;
@@ -110,5 +112,8 @@ body { font-family: nanumgothic; }
     }
     .top-menu .item:last-child {
         text-align: left!important;
+    }
+    #top {
+        padding: 10px 7px!important;
     }
 }

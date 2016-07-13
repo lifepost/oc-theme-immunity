@@ -13,7 +13,7 @@ $( '#top' ).click( function() {
 
 $(window).scroll(function(){
     if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        if ($(window).scrollTop() >= 550)
+        if ($(window).scrollTop() >= 550 && $(window).width() > 1200)
         {
             $(".customtel-wrapper").css({position:'fixed', top:'0'});
         }
