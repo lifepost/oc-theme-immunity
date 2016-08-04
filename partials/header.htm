@@ -33,7 +33,19 @@ numberOfLevels = 2
 
 <!-- 상단 메뉴 -->
 <div class="top-menu">
+    <nav class="navbar navbar-default">
     <div class="container">
-        {% component "topmenu" %}
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" style="padding-left: 0px; padding-right: 0px;">
+            {% component "topmenu" %}
+        </div>
     </div>
+    </nav>
 </div>

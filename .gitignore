@@ -1,5 +1,5 @@
-pages/
-content/
-assets/css/
-node_modules/
+/pages/
+/content/
+/assets/css/
+/node_modules/
 npm-debug.log

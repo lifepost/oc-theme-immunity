@@ -1,0 +1,848 @@
+//
+// Pages
+//
+// Styles specific to individual pages.
+//
+@import (once) "../theme/variables";
+
+// 메인 롤링
+.carousel-control.right {
+  background-image: none;
+}
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-indicators {
+  li {
+    width: 15px;
+    height: 15px;
+    background-color: #cccccc;
+    border: 0;
+    margin: 0;
+    margin-left: 8px;
+  }
+  .active {
+    background-color: @brand-primary;
+    width: 15px;
+    height: 15px;
+    border: 0;
+    margin-left: 8px;
+  }
+  bottom: -5px;
+}
+.main-slider {
+  border-bottom: 1px solid @brand-primary;
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin: 0 auto;
+  }
+}
+
+// 메인 컨텐츠
+.main-content {
+  margin: 20px 0 20px 0;
+}
+.content-title {
+  line-height: 40px;
+  border-bottom: 1px solid @brand-primary;
+  margin-bottom: 30px;
+  .title-main {
+    font-size: 21px;
+    color: @brand-primary;
+    font-weight: bold;
+  }
+  .title-sub {
+    font-size: 16px;
+    color: #000000;
+  }
+}
+.preview {
+  &:hover {
+    border-color: @brand-primary;
+  }
+  height: 380px;
+  border: 1px solid #d7d7d7;
+  margin: 20px 0 20px 0;
+  .preview-image {
+
+  }
+  .preview-content {
+    padding: 10px 25px 10px 25px;
+    h4 {
+      font-size: 21px;
+      font-weight: bold;
+      color: @brand-primary;
+      line-height: 31px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+.customtel {
+  &:hover {
+    border-color: @brand-primary;
+  }
+  height: 312px;
+  border: 1px solid #d7d7d7;
+  padding: 30px 0 0 0;
+  text-align: center;
+  margin: 20px 0 21px 0;
+  hr {
+    border-top: 1px solid @brand-primary;
+    width: 80%;
+  }
+  h3 {
+    font-size: 38px;
+    font-weight: bold;
+    color: @brand-primary;
+    padding-bottom: 20px;
+  }
+  h4 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  h5 {
+    span {
+      font-weight: bold;
+    }
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+  h5:last-child {
+    padding-bottom: 19px;
+  }
+  .customtel-box {
+    background-color: #f1f1f1;
+    color: #f65d57;
+    font-weight: bold;
+    line-height: 55px;
+  }
+}
+.customtel-side {
+  &:hover {
+    border-color: @brand-primary;
+  }
+  height: 266px;
+  border: 1px solid #d7d7d7;
+  border-top: 5px solid @brand-primary;
+  padding: 15px 0 0 0;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  hr {
+    border-top: 1px solid @brand-primary;
+    width: 85%;
+    margin-top: 15px;
+  }
+  h3 {
+    font-size: 38px;
+    font-weight: bold;
+    color: @brand-primary;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+  }
+  h5 {
+    span {
+      font-weight: bold;
+    }
+    font-size: 16px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+  }
+  .customtel-box {
+    background-color: #f1f1f1;
+    color: #f65d57;
+    font-weight: bold;
+    line-height: 48px;
+    padding-left: 20px;
+  }
+}
+.customtel-bottom-button {
+  &:hover {
+    border-color: @brand-primary;
+  }
+  font-size: 16px;
+  color: @brand-primary;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #d7d7d7;
+  padding: 10px 10px 10px 10px;
+  height: 47px;
+  margin-bottom: 20px;
+}
+.lab {
+  .lab-preview {
+    &:hover {
+      border-color: @brand-primary;
+    }
+    border: 1px solid #d7d7d7;
+    margin-bottom: 20px;
+    .lab-preview-text {
+      padding: 15px 10px 15px 10px;
+      font-size: 14px;
+    }
+  }
+}
+
+// 레이아웃 사이드
+.side-title {
+  color: @brand-primary;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 10px 10px;
+}
+.side-list {
+  a:hover { color: @brand-primary; }
+  font-size: 16px;
+  .branch-name {
+    font-weight: bold;
+  }
+  .selected {
+    a { color: @brand-primary; }
+  }
+}
+
+// 주치의 소개
+.doctor-introduce {
+  font-size: 16px;
+  .row {
+    padding-bottom: 40px;
+  }
+  hr {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 35px;
+    line-height: 45px;
+    strong {
+      color: @brand-primary;
+    }
+  }
+  .branch-box {
+    font-size: 19px;
+    background-color: @brand-primary;
+    color: #ffffff;
+    width: 70px;
+    padding: 8px 8px 8px 8px;
+    font-weight: bold;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .doctor-name {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .sub-wrapper {
+    margin-bottom: 30px;
+    ul
+    {
+      list-style: square inside url('data:image/gif;base64,R0lGODlhBQAKAIABAAAAAP///yH5BAEAAAEALAAAAAAFAAoAAAIIjI+ZwKwPUQEAOw==');
+      text-indent: -10px;
+      padding-left: 10px;
+      li {
+        line-height: 27px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.main-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.main-title-sub {
+  color: @brand-primary;
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.main-top-bar {
+  background-color: @brand-primary;
+  height: 5px;
+}
+.doctor-description {
+  padding: 30px 30px 40px 30px;
+  background-color: #fffbf5;
+  height: 430px;
+}
+.link-button {
+  background-color: @brand-primary;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.blog-box {
+  border: 1px solid #d7d7d7;
+  width: 100%;
+  float: left;
+  background-color: #fffbf5;
+  .blog-box-text {
+    width: 50%;
+    float: left;
+    padding: 25px 10px 20px 15px;
+    h4 {
+      font-size: 21px;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      line-height: 1.4;
+      letter-spacing: -1px;
+    }
+    strong {
+      font-size: 21px;
+      font-weight: bold;
+      color: @brand-primary;
+      margin-top: 0px;
+      margin-bottom: 30px;
+      letter-spacing: -1px;
+    }
+    span {
+      background-color: #000000;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 20px 5px 10px;
+    }
+  }
+  .blog-box-image {
+    width: 50%;
+    float: left;
+  }
+}
+.time-table {
+  span {
+    color: #f65d57;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  h4 {
+    color: #f65d57;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  code {
+    color: #f65d57;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: nanumgothic;
+  }
+}
+.side-list {
+  li {
+    border-left: 0;
+    border-right: 0;
+    line-height: 40px;
+  }
+  margin-bottom: 80px;
+}
+.page {
+  margin-top: 40px;
+}
+
+// 정적 컨텐츠
+.static-content-wrapper {
+  border-top: 5px solid @brand-primary;
+}
+
+// 정적 컨텐츠 제목 박스
+.static-content-title-box {
+  background-color: #fffbf5;
+  border-bottom: 1px solid #d7d7d7;
+  font-size: 28px;
+  text-align: center;
+  padding: 37px 0 37px 0;
+}
+@media (max-width: @screen-xs) {
+  .static-content-title-box {
+    font-size: 15px;
+  }
+}
+// 정적 컨텐츠 제목 서브 박스
+.static-content-sub-title-box {
+  color: #f55032;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 70px 70px 70px 70px;
+  text-align: center;
+  line-height: 31px;
+}
+@media (max-width: @screen-xs) {
+  .static-content-sub-title-box {
+    font-size: 11px;
+  }
+}
+// 정적 컨텐츠 레시피 서브 제목 박스
+.static-recipe-sub-title-box {
+  font-size: 18px;
+  padding: 70px 40px 70px 40px;
+  text-align: center;
+  line-height: 33px;
+  span {
+    color: #f55032;
+    font-weight: bold;
+  }
+}
+
+// 정적 컨텐츠 텍스트 박스
+.static-content-text-box {
+  font-size: 17px;
+  padding: 40px 0 150px 0;
+  line-height: 35px;
+  hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 1px solid #d7d7d7;
+  }
+  .hr-margin {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .sub-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  .sub-title21b {
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 50px;
+    color: @brand-primary;
+  }
+  .sub-title19b {
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+  .brand-color {
+    color: @brand-primary;
+  }
+  .strong-color {
+    color: #f26522;
+    font-weight: bold;
+  }
+  .static-content-text-box-title {
+    background-color: @brand-primary;
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 5px 15px;
+    margin-bottom: 40px;
+  }
+  .static-content-text-box-title18 {
+    background-color: @brand-primary;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 5px 15px;
+    margin-bottom: 40px;
+  }
+  .static-content-text-box-inbox {
+    background-color: #fffbf5;
+    border: 1px solid #d7d7d7;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+    h3 {
+      color: @brand-primary;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 0px!important;
+    }
+    font-size: 16px;
+  }
+  .static-image-text-box {
+    border: 1px solid #d7d7d7;
+    background-color: #fffbf5;
+    line-height: 35px;
+    margin: 150px 0;
+    .content-wrapper {
+      padding: 50px 40px;
+      font-size: 16px;
+      ul {
+        list-style: square inside url('/storage/app/media/checkbox.gif');
+        text-indent: -20px;
+        padding-left: 20px;
+        li {
+          line-height: 27px;
+          margin-bottom: 10px;
+        }
+      }
+      .title {
+        color: @brand-primary;
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .static-content-list {
+    margin-bottom: 150px;
+    ul {
+      list-style: square inside url('/storage/app/media/checkbox.gif');
+      text-indent: -20px;
+      padding-left: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      li {
+        line-height: 27px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media (max-width: @screen-xs) {
+  .static-content-text-box {
+    font-size: 15px;
+  }
+  .static-content-text-box-title {
+    font-size: 15px!important;
+  }
+}
+// 정적 컨텐츠 장면역질환
+.static-content-disease-wrapper {
+  font-size: 16px;
+  margin-bottom: 120px;
+  .title-box {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: @brand-primary;
+    color: #ffffff;
+    padding-left: 15px;
+    margin-bottom: 15px;
+  }
+  .title-description {
+    font-size: 17px;
+
+  }
+  .sub-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: @brand-primary;
+    margin-bottom: 5px;
+  }
+  .sub-title-category-title {
+    font-weight: bold;
+  }
+  ul {
+    list-style: square inside url('data:image/gif;base64,R0lGODlhBQAKAIABAAAAAP///yH5BAEAAAEALAAAAAAFAAoAAAIIjI+ZwKwPUQEAOw==');
+    text-indent: -10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    li {
+      line-height: 27px;
+      margin-bottom: 10px;
+    }
+  }
+  .checklist {
+    background-color: #fffbf5;
+    border: 1px solid #d7d7d7;
+    padding: 33px 30px;
+    margin-bottom: 60px;
+    .title {
+      font-size: 17px;
+      font-weight: bold;
+      color: @brand-primary;
+    }
+    .comment {
+      font-size: 14px;
+      font-weight: bold;
+      color: #f65d57;
+    }
+    hr {
+      border-top: 1px solid @brand-primary;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+    ul {
+      list-style: square inside url('/storage/app/media/checkbox.gif');
+      text-indent: -10px;
+      padding-left: 10px;
+      line-height: 40px;
+      li {
+        line-height: 27px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .checktable {
+    background-color: #fffbf5;
+    margin-bottom: 60px;
+    .title {
+      font-size: 17px;
+      font-weight: bold;
+      color: @brand-primary;
+      padding-left: 30px;
+    }
+    .comment {
+      font-size: 14px;
+      font-weight: bold;
+      color: #f65d57;
+      padding-left: 30px;
+    }
+    .point {
+      font-weight: bold;
+      padding: 15px 50px;
+    }
+    table {
+      width: 100%;
+    }
+    table, th, td {
+      border: 1px solid #d7d7d7;
+      padding: 15px 0;
+    }
+    td {
+      text-align: center;
+    }
+  }
+}
+
+// 정적 컨텐츠 레시피
+.recipe-wrapper {
+  line-height: 35px;
+  hr {
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+  .recipe-title-box {
+    font-size: 28px;
+    color: #ffffff;
+    background-color: #f26522;
+    padding: 30px 0;
+    text-align: center;
+  }
+  .recipe-sub-title-box {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 55px 0;
+    background-color: #fffbf5;
+    span {
+      color: #f26522;
+    }
+  }
+  .recipe-image-box {
+
+  }
+  .recipe-image-top-border-box {
+    margin-top: 170px;
+    border-top: 4px solid #f26522;
+  }
+  .recipe-name-box {
+    margin-top: 70px;
+    table {
+      text-align: center;
+      margin: 0 auto;
+      td {
+        padding: 19px 0;
+        font-size: 21px;
+        font-weight: bold;
+      }
+      td:first-child {
+        width: 180px;
+        background-color: #f26522;
+        color: #ffffff;
+      }
+      td:last-child {
+        color: @brand-primary;
+        padding: 0 30px;
+      }
+      table, td {
+        border: 1px solid #f26522;
+      }
+    }
+  }
+  .recipe-description {
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 0;
+    span {
+      color: #f26522;
+    }
+  }
+  .recipe-order {
+    font-size: 17px;
+    margin-bottom: 30px;
+    .title {
+      font-weight: bold;
+      color: @brand-primary;
+    }
+    ol {
+      list-style-type: decimal;
+      text-indent: 0px;
+      padding-left: 20px;
+      li {
+        line-height: 27px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .recipe-order-photo {
+    margin: 60px 0;
+    text-align: center;
+    img {
+      margin: 10px 0;
+    }
+  }
+  .recipe-effect-box {
+    border: 1px solid #f26522;
+    padding: 50px 70px 60px 70px;
+    margin: 70px 0;
+    font-size: 17px;
+    .title {
+      color: #f26522;
+    }
+    ol {
+      list-style-type: decimal;
+      text-indent: 0px;
+      padding-left: 20px;
+      li {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media (max-width: @screen-xs) {
+  .recipe-effect-box {
+    padding: 15px 15px!important;
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  .recipe-effect-box {
+    padding: 60px 70px;
+  }
+}
+
+@media (max-width: @screen-xs) {
+  .static-content-wrapper {
+    .recipe-wrapper {
+      .recipe-name-box table td:first-child {
+        width: 30%;
+      }
+      .recipe-name-box table td:last-child {
+        padding: 0 10px;
+      }
+    }
+    .static-content-sub-title-box {
+      padding: 40px 20px;
+    }
+    .static-content-disease-wrapper .checktable .point {
+      padding: 10px;
+    }
+    .static-recipe-sub-title-box {
+      padding: 40px 20px;
+    }
+    .static-content-text-box {
+      .static-content-text-box-inbox {
+        width: 100%;
+        font-size: 11px;
+      }
+      .static-image-text-box .content-wrapper {
+        padding: 20px;
+        font-size: 12px;
+        .title {
+          font-size: 16px;
+        }
+      }
+      .sub-title {
+        font-size: 14px;
+      }
+      .sub-title19b {
+        font-size: 15px;
+      }
+    }
+  }
+  .static-content-disease-wrapper {
+    font-size: 15px;
+    .checklist .title {
+      font-size: 13px;
+    }
+    .checklist .comment {
+      font-size: 12px;
+      li {
+        font-size: 11px;
+      }
+    }
+    .checktable {
+      .comment {
+        font-size: 12px;
+      }
+      td {
+        font-size: 11px;
+      }
+    }
+  }
+  .recipe-wrapper {
+    .recipe-title-box {
+      font-size: 20px;
+    }
+    .recipe-sub-title-box {
+      font-size: 12px;
+    }
+    .recipe-name-box table td {
+      font-size: 16px;
+    }
+    .recipe-description {
+      font-size: 15px;
+    }
+    .recipe-order {
+      font-size: 15px;
+    }
+    .recipe-effect-box {
+      font-size: 15px;
+    }
+  }
+  .static-recipe-sub-title-box {
+    font-size: 15px;
+  }
+  .main-slider {
+    .carousel {
+      overflow: hidden;
+    }
+    .carousel-inner {
+      width: 200%;
+      left: -6%;
+      margin-left: -43%;
+
+      img {
+        height: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-sm) {
+  .static-content-image-box {
+    .left {
+      padding-right: 10px!important;
+    }
+    .right {
+      padding-left: 10px!important;
+    }
+  }
+}
+
+.doctor-profile-layout {
+  width: 50%;
+}
+@media (max-width: @screen-sm) {
+  .doctor-profile-layout {
+    width: 100%;
+  }
+}
+
