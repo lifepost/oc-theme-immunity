@@ -94,6 +94,22 @@ body { font-family: nanumgothic; }
     margin: 0 10px;
     float: right;
 }
+#to_top {
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    cursor:pointer;
+    width: 57px;
+    height: 40px;
+    display: block;
+    padding-top: 10px;
+    background: @brand-primary;
+    opacity: .5;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    z-index: 999;
+}
 @media (max-width: @screen-sm) {
     .layout-side {
         width: 100%;
@@ -117,6 +133,9 @@ body { font-family: nanumgothic; }
     .navbar-default .navbar-toggle {
         border-color: @brand-primary!important;
     }
+    .navbar-default .navbar-collapse {
+        border-color: @brand-primary!important;
+    }
     .top-menu .nav-pills > li {
         margin-right: 0px;
         width: 100%;
@@ -124,8 +143,5 @@ body { font-family: nanumgothic; }
     }
     .top-menu .item:last-child {
         text-align: left!important;
-    }
-    #top {
-        padding: 10px 7px!important;
     }
 }
